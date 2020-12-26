@@ -296,6 +296,8 @@ int check_win(){
     }
     return condi;
 }
+
+// code from Maurits van der Schee: 2048.c
 void signal_callback_handler(int signum) {
     printf("         TERMINATED         \n");
     setBufferedInput(true);
