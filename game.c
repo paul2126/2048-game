@@ -170,7 +170,7 @@ void add_random(){
         }
     }
 
-    int r1, c1, r2, c2, value1, value2;
+    int r1, c1, value1;
     // assign value
     if(rand() % 2){
         value1 = 4;
