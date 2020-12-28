@@ -83,21 +83,14 @@ int main(){
   }
     setBufferedInput(true);
 }
-void move_right(){
-  printf("\033[2J\033[H" );
-  
+void move_right(){  
   if(move_grid()){
     add_random();
     add_random();
   }
-  show_point_moves();
-  printf("\n");
-  show_grid();
 }
 
 void move_left(){
-  printf("\033[2J\033[H" );
-
   rotate_grid();
   rotate_grid();
   if(move_grid()){
@@ -106,14 +99,9 @@ void move_left(){
   }
   rotate_grid();
   rotate_grid();
-  show_point_moves();
-  printf("\n");
-  show_grid();
 }
 
 void move_down(){
-  printf("\033[2J\033[H" );
-
   rotate_grid();
   if(move_grid()){
     add_random();
@@ -122,14 +110,9 @@ void move_down(){
   rotate_grid();
   rotate_grid();
   rotate_grid();
-  show_point_moves();
-  printf("\n");
-  show_grid();
 }
 
 void move_up(){
-  printf("\033[2J\033[H" );
-
   rotate_grid();
   rotate_grid();
   rotate_grid();
@@ -138,9 +121,6 @@ void move_up(){
     add_random();
   }  
   rotate_grid();
-  show_point_moves();
-  printf("\n");
-  show_grid();
 }
 
 void generate_grid(){
